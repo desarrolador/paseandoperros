@@ -1,5 +1,5 @@
 *{
-    font-size: large;
+font-size: large;
 
 }
 
@@ -9,13 +9,12 @@ body, html {
     padding: 0;
     height: 100%;
     width: 100%;
-    overflow: hidden;
+    
 }
 
 .background-container {
-    position: absolute;
-    width: 100%;
-    height: 70%;
+    position: relative;
+    height: 60%;
     overflow: hidden;
 }
 
@@ -38,7 +37,7 @@ body, html {
 .background-container::after {
     background-image: url("imagenes de perros/labrador.jpg");
     opacity: 0;
-    animation: fadeBackground 10s infinite;
+    animation: fadeBackground 8s infinite;
 }
 
 @keyframes fadeBackground {
@@ -88,4 +87,11 @@ h1 {
     border-radius: 4px;
 }
 
-
+.introduccion {
+    font-family: 'Times New Roman';
+    font-size: larger;
+    color: #aa74a6;
+    text-align: center;
+    margin: 50px;
+    padding: 50px;
+}
