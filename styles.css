@@ -95,3 +95,40 @@ h1 {
     margin: 50px;
     padding: 50px;
 }
+
+.background-container2 {
+    position: relative;
+    height: 60%;
+    overflow: hidden;
+}
+
+.background-container2::before, .background-container2::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center;
+    transition: opacity 2s ease-in-out;
+}
+
+.background-container2::before {
+   background-image: url("imagenes de perros/silvestre.jpg");
+}
+
+.background-container2::after {
+    background-image: url("imagenes de perros/perro maltes.jpg");
+    opacity: 0;
+    animation: fadeBackground 8s infinite;
+}
+
+@keyframes fadeBackground {
+    0%, 100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
