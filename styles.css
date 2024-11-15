@@ -132,3 +132,31 @@ h1 {
         opacity: 1;
     }
 }
+
+.ul {
+    display: grid;
+    flex-direction: column;
+    list-style-type: none;
+}
+
+
+.li {
+    justify-content: center;
+    padding: 10px;
+    color: #aa74a6;
+    cursor: pointer;
+}
+
+.li1 {
+    justify-content: center;
+    padding: 10px;
+    color: #aa74a6;
+    cursor: pointer;
+}
+
+.li2 {
+    justify-content: center;
+    padding: 10px;
+    color: #aa74a6;
+    cursor: pointer;
+}
