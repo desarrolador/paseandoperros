@@ -160,3 +160,38 @@ h1 {
     color: #aa74a6;
     cursor: pointer;
 }
+
+.footer{
+    display: flex;
+    justify-content: flex-end;
+    background-color: #aa74a6;
+    padding: 10px;
+
+}
+
+.footer ul {
+    list-style: none; /* Eliminar los puntos de la lista */
+    display: flex;
+    gap: 20px; /* Espacio entre cada elemento */
+    margin: 0;
+    padding: 0;
+}
+
+.footer li {
+    margin:0;
+    color: #faf7f7;
+  
+}
+
+.footer a { 
+    
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+
+}
+
+.footer a:hover {
+    background-color: #575757;
+    border-radius: 4px;
+}
