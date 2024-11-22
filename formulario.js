@@ -1,5 +1,5 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const form = document.getElementById('puppyForm');
+document.addEventListener('DOMContentLoaded', function() {
+    const form = document.getElementById("puppyForm");
 
     if (form) {
         form.addEventListener('submit', (event) => {
@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
             console.log('Datos guardados:', dogWalker);
         });
     } else {
-        console.log('El formulario con id "puppyForm" no fue encontrado.');
+        console.log('id no encontrado');
     }
 });
 
