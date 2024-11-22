@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PUPPY</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
+    <script src="formulario.js"></script>
 </head>
 <body>
 
@@ -47,7 +47,8 @@
 
 
     <main>
-        <form action="PUPPY" method="post">
+      
+        <form id="puppyform" action="PUPPY" method="post">
             <ul class="ul">
               <li class="li">
                 <label for="name">Nombre del perruno:</label>
@@ -64,6 +65,8 @@
               <li class="li">
                 <label for="mensaje">Mensaje:</label>
                 <textarea id="mensaje" name="mensaje"></textarea>
+              </li>
+              <li class="li"> <button type="submit">Ingresar</button> 
               </li>
             </ul>
           </form>
