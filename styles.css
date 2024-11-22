@@ -134,32 +134,47 @@ h1 {
 }
 
 .ul {
-    display: grid;
+    display: flex;
     flex-direction: column;
     list-style-type: none;
-}
-
-
-.li {
-    justify-content: center;
-    padding: 10px;
+    padding: 0;
+    align-items: center;
+  }
+  
+  .li {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 80%;
+    max-width: 400px;
+  }
+  
+  label {
+    margin-bottom: 5px;
     color: #aa74a6;
-    cursor: pointer;
-}
-
-.li1 {
-    justify-content: center;
+  }
+  
+  input,
+  textarea,
+  button {
     padding: 10px;
-    color: #aa74a6;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 10px;
+    width: 100%;
+  }
+  
+  button {
+    background-color: #aa74a6;
+    color: white;
     cursor: pointer;
-}
-
-.li2 {
-    justify-content: center;
-    padding: 10px;
-    color: #aa74a6;
-    cursor: pointer;
-}
+    border: none;
+  }
+  
+  button:hover {
+    background-color: #8a547c;
+  }
+  
 
 .footer{
     display: flex;
