@@ -48,28 +48,33 @@
 
     <main>
       
-        <form id="puppyform" action="" method="post">
+        <form id="puppyform" action="" method="get">
             <ul class="ul">
               <li class="li">
                 <label for="name">Nombre del perruno:</label>
-                <input type="text" id="nombre" name="usuario" />
+                <input type="text" id="nombre" name="nombre" required/>
               </li>
               <li class="li">
                 <label for="mail">ubicacion:</label>
-                <input type="text" id="ubicacion" name="ubicacion" />
+                <input type="text" id="ubicacion" name="ubicacion" required />
               </li>
               <li class="li">
                 <label for="mail">Correo electrónico:</label>
-                <input type="email" id="email" name="email" />
+                <input type="email" id="email" name="email" required />
               </li>
               <li class="li">
                 <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje"></textarea>
+                <textarea id="mensaje" name="mensaje" required></textarea>
               </li>
               <li class="li"> <button type="submit">Ingresar</button> 
               </li>
             </ul>
           </form>
+
+          <button id="retrieveData">mostrar datos guardados</button>
+        
+          <div id="output"></div>
+
           
     </main>
 

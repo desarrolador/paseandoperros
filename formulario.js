@@ -1,5 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     const form = document.getElementById("puppyForm");
+    const retrieveButton = document.getElementById("retrieveData");
+    const outputDiv = document.getElementById("output");
 
     if (form) {
         form.addEventListener('submit', (event) => {
@@ -27,7 +29,28 @@ document.addEventListener('DOMContentLoaded', function() {
             console.log('Datos guardados:', dogWalker);
         });
     } else {
-        console.log('id no encontrado');
+        console.error();
+    }
+
+    if (retrieveButton) {
+        retrieveButton.addEventListener('click', () => {
+            // Recuperar los datos de Local Storage
+            const storedData = localStorage.getItem('dogWalker');
+            if (storedData) {
+                const dogWalker = JSON.parse(storedData);
+                outputDiv.innerHTML = `
+                    <p>Nombre: ${dogWalker.nombre}</p>
+                    <p>Ubicación: ${dogWalker.ubicacion}</p>
+                    <p>Email: ${dogWalker.email}</p>
+                    <p>Mensaje: ${dogWalker.mensaje}</p>
+                `;
+            } else {
+                outputDiv.innerHTML = `<p>No hay datos guardados.</p>`;
+            }
+        });
+    } else {
+        console.error();
     }
 });
+
 

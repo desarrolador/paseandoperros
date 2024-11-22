@@ -163,7 +163,10 @@ h1 {
     font-size: 10px;
     width: 100%;
   }
-  
+  #output { margin-top: 20px; 
+    padding: 10px; 
+    border: 1px solid #ddd;
+  }
   button {
     background-color: #aa74a6;
     color: white;
