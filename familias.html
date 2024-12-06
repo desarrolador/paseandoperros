@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Paseadores de Perros</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 20px;
+    margin: 10px 0;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+    </style>
+
+    <section id="familias">
+        <h2>Para Familias</h2>
+        <p>Ofrecemos servicios de paseo de perros adaptados a tus necesidades. Ya sea un paseo corto o un paseo largo, individual o en grupo, tenemos opciones para todos.</p>
+
+        <h3>Precios y Paquetes</h3>
+        <ul>
+            <li>Paseo corto (30 minutos): $10</li>
+            <li>Paseo largo (1 hora): $18</li>
+            <li>Paquete semanal (5 paseos cortos): $45</li>
+            <li>Paquete mensual (20 paseos cortos): $160</li>
+        </ul>
+
+        <h3>Beneficios</h3>
+        <ul>
+            <li>Mejora la salud y el bienestar de tu perro</li>
+            <li>Permite a las familias con agendas ocupadas mantener a sus perros ejercitados</li>
+            <li>Socialización con otros perros</li>
+        </ul>
+
+        <h3>Testimonios</h3>
+        <p>"Mi perro Max adora sus paseos con ustedes. ¡Gran servicio!" - Ana</p>
+
+        <h3>Proceso de Reserva</h3>
+        <p>Para reservar un paseador, completa nuestro formulario de contacto o llámanos al (123) 456-7890.</p>
+
+        <!-- Formulario de contacto -->
+        <form id="contactForm">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required><br>
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea><br>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
