@@ -180,17 +180,27 @@ h1 {
     input[type="submit"]:hover { 
         background-color: #45a049; 
     }
-  button {
-    background-color: #aa74a6;
+
+button {
+    background-color: #4CAF50;
     color: white;
-    cursor: pointer;
     border: none;
-  }
-  
-  button:hover {
-    background-color: #8a547c;
-  }
-  
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 10px 15px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.message {
+    text-align: center;
+    margin-top: 20px;
+}
+
 
 .footer{
     display: flex;
