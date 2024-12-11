@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog de Comentarios</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="blog.js"></script>
+</head>
+<style>
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2, h3 {
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+input[type="text"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.comment {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.comment h4 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.comment p {
+    margin: 5px 0 0;
+}
+
+
+
+</style>
+
+
+<body>
+    <nav>
+        <a href="index.html">Inicio</a>
+    </nav>
+
+    <section id="comentarios">
+        <h2>Blog de Comentarios</h2>
+        <form id="commentForm">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required><br>
+
+            <label for="comentario">Comentario:</label>
+            <textarea id="comentario" name="comentario" required></textarea><br>
+
+            <input type="submit" value="Enviar">
+        </form>
+
+        <div id="commentSection">
+            <h3>Comentarios</h3>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Tu Página Web. Todos los derechos reservados.</p>
+    </footer>
+
+    
+</body>
+</html>
