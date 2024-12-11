@@ -78,6 +78,53 @@ ul {
     list-style-type: disc;
 }
 
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+input[type="text"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.comment {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.comment h4 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.comment p {
+    margin: 5px 0 0;
+}
+
 </style>
 <body>
     <!-- Navbar -->
@@ -97,11 +144,11 @@ ul {
 
         <!-- Galería de Imágenes -->
         <div class="gallery">
-            <img src="imagenes de perros/cachorro 2.jpg" alt="Perro feliz">
-            <img src="imagenes de perros/perro-de-raza-beagle_67c65dda_230302133829_900x900.jpg" alt="Perro jugando">
-            <img src="imagenes de perros/rotwailler grande.jpg" alt="Perro descansando">
-            <img src="imagenes de perros/labrador.jpg" alt="Perro corriendo">
-            <img src="imagenes de perros/Perritos-cachorros-162.jpg" alt="Perro con dueño">
+            <img src="imagenes de perros/cachorro rotwailler.webp" alt="Perro feliz">
+            <img src="imagenes de perros/perro maltes.jpg" alt="Perro jugando">
+            <img src="imagenes de perros/perro-de-raza-beagle_67c65dda_230302133829_900x900.jpg" alt="Perro descansando">
+            <img src="imagenes de perros/Perritos-cachorros-162.jpg" alt="Perro corriendo">
+            <img src="imagenes de perros/husky-siberiano-bosque.jpeg" alt="Perro con dueño">
         </div>
 
         <!-- Temas para Charlar -->
@@ -113,10 +160,26 @@ ul {
             <li>Curiosidades sobre diferentes razas de perros</li>
             <li>Actividades favoritas para hacer con tu perro</li>
         </ul>
+
+        <!-- Formulario de Comentarios -->
+        <h3>Comparte tus Respuestas</h3>
+        <form id="commentForm">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required><br>
+
+            <label for="comentario">Comentario:</label>
+            <textarea id="comentario" name="comentario" required></textarea><br>
+
+            <input type="submit" value="Enviar">
+        </form>
+
+        <div id="commentSection">
+            <h3>Comentarios</h3>
+        </div>
     </section>
 
     <footer>
-        <p>&copy; 2024 Tu Página Web. Todos los derechos reservados.</p>
+        <p>&copy; 2024. Todos los derechos reservados.</p>
     </footer>
 
     <script src="scripts.js"></script>
