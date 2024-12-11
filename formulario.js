@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
             console.log('Datos guardados:', dogWalker);
         });
     } else {
-        console.log();
+        console.log('Formulario no encontrado',dogwalker); // Corregido para el caso en que el formulario no se encuentre
     }
 
     if (retrieveButton) {
@@ -47,10 +47,10 @@ document.addEventListener('DOMContentLoaded', function() {
             if (storedData) {
                 const dogWalker = JSON.parse(storedData);
                 outputDiv.innerHTML = `
-                    <p>Nombre: ${dogWalker.nombre}</p>
-                    <p>Ubicación: ${dogWalker.ubicacion}</p>
-                    <p>Email: ${dogWalker.email}</p>
-                    <p>Mensaje: ${dogWalker.mensaje}</p>
+                       Nombre: ${dogWalker.nombre}
+                       Ubicación: ${dogWalker.ubicacion}
+                       Email: ${dogWalker.email}
+                       Mensaje: ${dogWalker.mensaje}
                 `;
                 console.log('Datos recuperados:', dogWalker); // Depuración
             } else {
@@ -59,6 +59,6 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     } else {
-        console.log();
+        console.log('Botón de recuperación no encontrado',dogWalker);
     }
 });
